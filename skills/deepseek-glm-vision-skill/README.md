@@ -36,7 +36,7 @@ Skill 会优先使用 MCP；MCP 不存在时退回直连免费 API 脚本。
 ```bash
 git clone https://github.com/up525/opencode-skillful.git
 cd opencode-skillful/skills/deepseek-glm-vision-skill
-./install-global.sh
+bash install-global.sh
 ```
 
 也可以手动复制：
