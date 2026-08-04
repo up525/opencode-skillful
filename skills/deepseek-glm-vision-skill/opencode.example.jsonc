@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // Keep your existing DeepSeek provider/model configuration.
+  // This MCP adds visual tools; it does not replace the main model.
+  "mcp": {
+    "zai-mcp-server": {
+      "type": "local",
+      "command": ["npx", "-y", "@z_ai/mcp-server@latest"],
+      "enabled": true,
+      "environment": {
+        "Z_AI_API_KEY": "{env:Z_AI_API_KEY}",
+        "Z_AI_MODE": "ZHIPU"
+      }
+    }
+  }
+}
